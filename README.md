@@ -21,7 +21,7 @@ The code uses data from a share of MAG obtained on 2021-08-02 which cannot be sh
 Enables communication between Spark/PySpark and the hpc cluster at ITU (hpc.itu.dk).
 Stores dtypes for the files that need to be loaded with PySpark. 
 
-### preprocessing: 
+### preprocessing.ipynb: 
 Early preprocessing and subsetting of data used for the study.
 Writes most of the files that are used in further analysis (https://github.com/victor-m-p/reform-psychology). 
 E.g. 
@@ -30,13 +30,13 @@ E.g.
 * journal articles. 
 * all papers citing these focal articles.
 
-### get_subfields: 
+### get_subfields.ipynb: 
 Extracts information from subfields, "open science", "reproducibility" and "replication".
 
-### check_preprocessing:
+### check_preprocessing.ipynb:
 Sanity check of the preprocessing, e.g. number of articles, number of authorships and document types. 
 
-### check_pipeline: 
+### check_pipeline.ipynb: 
 Sanity check of the intended analysis pipeline (see: https://github.com/victor-m-p/reform-psychology).
 E.g. important that some articles actually do mention "replicat" in their titles. 
 
