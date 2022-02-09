@@ -9,21 +9,19 @@ The code is early preprocessing of data from psychology, economics, sociology an
 needed for studying publication and citation behavior of replication studies (and other reform-psychology publications).
 The code uses data from a share of MAG obtained on 2021-08-02 which cannot be shared.  
 
-## Getting Started
-
-### Dependencies
+## Dependencies
 
 * see nerdenv.yml
 * run on ubuntu server (hpc.itu.dk) using SLURM scheduler. 
 * requires spark/pyspark set-up
 
-### Files
+## Files
 
-#### MAGmasters.py and MAGsparkmasters.py
+### MAGmasters.py and MAGsparkmasters.py
 Enables communication between Spark/PySpark and the hpc cluster at ITU (hpc.itu.dk).
 Stores dtypes for the files that need to be loaded with PySpark. 
 
-#### preprocessing: 
+### preprocessing: 
 Early preprocessing and subsetting of data used for the study.
 Writes most of the files that are used in further analysis (https://github.com/victor-m-p/reform-psychology). 
 E.g. 
@@ -32,20 +30,20 @@ E.g.
 * journal articles. 
 * all papers citing these focal articles.
 
-#### get_subfields: 
+### get_subfields: 
 Extracts information from subfields, "open science", "reproducibility" and "replication".
 
-#### check_preprocessing:
+### check_preprocessing:
 Sanity check of the preprocessing, e.g. number of articles, number of authorships and document types. 
 
-#### check_pipeline: 
+### check_pipeline: 
 Sanity check of the intended analysis pipeline (see: https://github.com/victor-m-p/reform-psychology).
 E.g. important that some articles actually do mention "replicat" in their titles. 
 
 ## Authors
 
-Victor Møller Poulsen [@vic_moeller](https://github.com/victor-m-p) & [github](https://github.com/victor-m-p) <br/>
-Lasse Buschmann Alsbirk [github](https://github.com/buschbirk)
+Victor Møller Poulsen: [@vic_moeller](https://github.com/victor-m-p) & [github](https://github.com/victor-m-p) <br/>
+Lasse Buschmann Alsbirk: [github](https://github.com/buschbirk)
 
 ## Contributions
 
